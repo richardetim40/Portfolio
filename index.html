@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Richard Etim — AI-Directed Developer &amp; Prompt Engineer</title>
 <meta name="description" content="Richard Etim builds real web apps, bots, and tools by directing AI — Supabase backends, payment integrations, and production-ready products.">
+
+<!-- Open Graph / share preview — replace og-image.png with your exported Canva image -->
+<meta property="og:title" content="Richard Etim — AI-Directed Developer & Prompt Engineer">
+<meta property="og:description" content="Building real products by directing AI — Supabase, payments, bots.">
+<meta property="og:image" content="https://richardetim40.github.io/Portfolio/assets/og-image.png">
+<meta property="og:url" content="https://richardetim40.github.io/Portfolio/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Richard Etim — AI-Directed Developer & Prompt Engineer">
+<meta name="twitter:description" content="Building real products by directing AI — Supabase, payments, bots.">
+<meta name="twitter:image" content="https://richardetim40.github.io/Portfolio/assets/og-image.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -56,6 +68,8 @@
     font-weight:600;font-size:14px;letter-spacing:0.02em;
   }
   .logo span{color:var(--amber);}
+  .logo-link{display:flex;align-items:center;height:40px;}
+  .logo-img{height:32px;width:auto;display:block;}
   .nav-links{display:flex;gap:32px;align-items:center;}
   .nav-links a{
     font-size:13px;font-family:'JetBrains Mono',monospace;
@@ -286,7 +300,11 @@
 
 <header>
   <nav class="nav">
-    <a href="#" class="logo">RICHARD<span>.</span>ETIM</a>
+    <a href="#" class="logo-link">
+      <!-- Replace logo.png with your exported Canva logo (transparent PNG works best) -->
+      <img src="assets/logo.png" alt="Richard Etim" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="logo" style="display:none;">RICHARD<span>.</span>ETIM</span>
+    </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <div class="nav-links" id="navLinks">
       <a href="#work">Work</a>
