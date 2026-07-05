@@ -476,4 +476,81 @@
     <div class="about-grid">
       <div data-reveal>
         <p>I'm Richard Etim — a <strong>3rd-year Physiotherapy student</strong> at the University of Uyo and a self-built AI-directed developer. I don't just use AI tools — I architect them. My edge is knowing how to ask the right question to build the right thing.</p>
-        <p>I've shipped a <strong>live Telegram trading bot</strong>, built e-commerce sites with real Supabase backends and payment integrations, created mobile-first educational apps, and delivered formal rese
+        <p>I've shipped a <strong>live Telegram trading bot</strong>, built e-commerce sites with real Supabase backends and payment integrations, created mobile-first educational apps, and delivered formal research reports — all by directing Claude with precise, well-engineered prompts.</p>
+        <p>Currently building toward a <strong>freelance web development business</strong> on Upwork and Fiverr, targeting clients who need custom, AI-powered web solutions fast.</p>
+        <div class="chips">
+          <span class="chip">📍 Uyo, Nigeria</span>
+          <span class="chip">🎓 Prompt Eng. Certified</span>
+          <span class="chip">⚽ Football Analyst</span>
+          <span class="chip">🏥 Physio Student</span>
+        </div>
+      </div>
+      <div class="timeline" data-reveal>
+        <div class="tl-item">
+          <span class="tl-date">June 2026</span>
+          <h5>Prompt Engineering Certification — Alison</h5>
+          <p>Completed and received prompt engineering cert, added to LinkedIn.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">2026</span>
+          <h5>Flossie Cakes — Supabase E-commerce</h5>
+          <p>First client project: bakery pre-order site with Supabase backend and Paystack integration.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">2026</span>
+          <h5>Telegram Trading Bot v1 → v4.1</h5>
+          <p>Iterated a Solana memecoin bot to production, deployed live on JustRunMy.App.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">2026</span>
+          <h5>PhysioCore Study App</h5>
+          <p>Built a mobile-first study app covering physiotherapy coursework.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">2026</span>
+          <h5>Started AI-Directed Development</h5>
+          <p>Began building real products with Claude — web apps, bots, tools, and reports.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-inner" data-reveal>
+      <h2>Let's build something.</h2>
+      <p>Need a web app, a Supabase backend, a bot, or an AI-powered tool? I'm available for freelance projects. Let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:richardetim40@gmail.com">✉️ Email me</a>
+        <a href="https://www.upwork.com/freelancers/~01fb113ef2355fa9ea" target="_blank" rel="noopener">💼 Upwork</a>
+        <a href="https://www.fiverr.com/richardetim40" target="_blank" rel="noopener">🎯 Fiverr</a>
+        <a href="https://www.linkedin.com/in/richard-akpaessien-774892419" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a href="https://www.youtube.com/@RichardEtim-PitchVerdict" target="_blank" rel="noopener">▶️ YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Richard Etim. Built with Claude AI + prompt engineering.</span>
+    <span>Uyo, Nigeria · Available worldwide</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
